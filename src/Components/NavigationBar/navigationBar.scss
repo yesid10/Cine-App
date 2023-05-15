@@ -1,8 +1,11 @@
 .navBar{
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
     color: #fff;
     background-color: #111747;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     section{
         display: flex;
         align-items: center;
@@ -11,10 +14,11 @@
     &__link{
         color: #fff;
         text-decoration: none;
+        border-bottom: 3px solid yellow;
     }
     &__figure{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: #fff;
         img{
@@ -22,7 +26,11 @@
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
-            justify-content: center;
         }
+    }
+    &__search{
+        display: flex;
+        gap: 10px;
+        
     }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../assets/Logo-cinecolombia.webp'
 import { NavLink } from 'react-router-dom';
 import './navigationBar.scss'
+import BasicSelect from '../Formulario/Form';
 
 const NavigationBar = () => {
   return (
@@ -14,7 +15,8 @@ const NavigationBar = () => {
                 Cartelera
             </NavLink>
         </section>
-        <form>
+        <BasicSelect/>
+        {/* <form className="navBar__search">
             <div>
                 <label htmlFor="">Ubicación</label>
                 <select name="ubicacion">
@@ -31,7 +33,7 @@ const NavigationBar = () => {
                 <label htmlFor="">Fecha</label>
                 <input type="date" />
             </div>
-        </form>
+        </form> */}
     </nav>
   )
 }
