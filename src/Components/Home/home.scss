@@ -1,0 +1,42 @@
+.main{
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h1{
+        color: #111747;
+    }
+    p{
+        color: gray;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        figure{
+            width: 300px;
+            height: 400px;
+            cursor: grabbing;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                
+            }
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+    }
+    &__spin{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
